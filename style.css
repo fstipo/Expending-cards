@@ -26,11 +26,11 @@ body {
   background-repeat: no-repeat;
   height: 80vh;
   border-radius: 50px;
-  color: #fff;
+  color: #f3f3f3;
   cursor: pointer;
   flex: 0.5;
   margin: 10px;
-  transition: flex 0.75 ease-in;
+  transition: flex 0.75s ease-in;
 }
 
 .panel h3 {
@@ -40,6 +40,8 @@ body {
   left: 20px;
   margin: 0;
   opacity: 0;
+  text-shadow: 2px 7px 5px rgba(0, 0, 0, 0.3),
+    0px -4px 10px rgba(255, 255, 255, 0.3);
 }
 
 .panel.active {
@@ -48,6 +50,7 @@ body {
 
 .panel.active h3 {
   opacity: 1;
+  transition: opacity 0.3s ease-in 0.4s;
 }
 
 @media (max-width: 600px) {

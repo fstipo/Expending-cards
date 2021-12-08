@@ -6,13 +6,17 @@
   box-sizing: border-box;
 }
 
+html {
+  font-size: 62.5%;
+}
+
 body {
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  height: 100vh;
   margin: 0;
   overflow: hidden;
-  height: 100vh;
   font-family: 'Muli', sans-serif;
 }
 
@@ -22,26 +26,26 @@ body {
 }
 
 .panel {
+  flex: 0.5;
   position: relative;
+  height: 80vh;
+  margin: 10px;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 80vh;
-  border-radius: 50px;
   color: #f3f3f3;
-  cursor: pointer;
-  flex: 0.5;
-  margin: 10px;
   transition: flex 0.75s ease-in;
+  cursor: pointer;
+  border-radius: 50px;
 }
 
 .panel-title {
   position: absolute;
-  font-size: 24px;
   bottom: 40px;
   left: 40px;
   margin: 0;
   opacity: 0;
+  font-size: 24px;
 }
 
 .panel.active {

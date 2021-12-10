@@ -1,20 +1,23 @@
-const divContainer = document.createElement('div');
-divContainer.classList.add('container');
-document.body.appendChild(divContainer);
+const container = document.createElement('div');
+container.classList.add('container');
+document.body.appendChild(container);
 
 for (let i = 0; i < 5; i++) {
-  const divPanelEl = document.createElement('div');
-  divPanelEl.classList.add('panel');
-  divPanelEl.setAttribute(
+  const panelEl = document.createElement('div');
+  panelEl.classList.add('panel');
+  panelEl.setAttribute(
     'style',
     "background-image: url('https://picsum.photos/id/960/600')"
   );
-  divContainer.appendChild(divPanelEl);
+  // panelEl[0].classList.add('active');
+  container.appendChild(panelEl);
   const h3 = document.createElement('h3');
   h3.classList.add('panel-title');
   h3.textContent = 'Explore the world';
-  divPanelEl.appendChild(h3);
+  panelEl.appendChild(h3);
 }
+
+container.firstChild.classList.add('active');
 
 const panels = document.querySelectorAll('.panel');
 

@@ -15,8 +15,7 @@ for (let i = 0; i < 5; i++) {
   const panelEl = document.createElement('div');
   panelEl.classList.add('panel');
   panelEl.setAttribute('style', bgImg);
-  console.log(bgImg);
-  // panelEl[0].classList.add('active');
+
   container.appendChild(panelEl);
   const h3 = document.createElement('h3');
   h3.classList.add('panel-title');

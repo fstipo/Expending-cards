@@ -17,6 +17,7 @@ body {
   height: 100vh;
   margin: 0;
   overflow: hidden;
+  background-color: rgb(20, 20, 20);
   font-family: 'Muli', sans-serif;
 }
 
